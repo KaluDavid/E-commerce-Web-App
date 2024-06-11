@@ -1,0 +1,43 @@
+@import "/src/styles/variable.scss";
+
+main {
+  width: 100%;
+  height: 10vh;
+  position: relative;
+  margin-bottom: 50%;
+
+  //   Video Style
+  video {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  //   DIv style
+  div {
+    background-color: rgb(106, 55, 156);
+    opacity: 0.5;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  h1 {
+    padding: 10% 13%;
+    font-size: 100px;
+    text-align: left;
+    opacity: 1;
+    font-family: $BigShouldersDisplay;
+    color: $lightGray;
+    position: absolute;
+    top: 0;
+    backdrop-filter: blur(3px);
+    width: 100%;
+    height: 100vh;
+  }
+}

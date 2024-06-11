@@ -1,5 +1,8 @@
 import React from "react";
-import { Body } from "../components/Body-components/Body";
+import { Header } from "./components/Body-component/Header";
+import { Footer } from "./components/Body-component/Footer";
+import { Main } from "./components/Body-component/Body";
+import "./styles/main.scss";
 
 export default function App() {
   return (
@@ -7,7 +10,7 @@ export default function App() {
       <div>
         <Header />
       </div>
-      <div>hey</div>
+
       <div>
         <Main />
       </div>

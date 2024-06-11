@@ -1,0 +1,37 @@
+@import "/src/styles/variable.scss";
+
+header {
+  display: flex;
+  padding: 2% 15%;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  div {
+    display: flex;
+    align-items: center;
+
+    h1 {
+      font-family: $BigShouldersDisplay;
+      color: $Blue;
+      font-weight: 400;
+      font-size: 44px;
+    }
+
+    img {
+      width: 20%;
+    }
+  }
+
+  nav {
+    display: flex;
+    gap: 20%;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: $Blue;
+    font-family: $LexendDeca;
+    font-size: large;
+  }
+}
