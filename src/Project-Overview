@@ -1,0 +1,97 @@
+Task: Build an E-commerce Web App
+
+Objective:
+
+Create a web application that displays a list of products with their prices and ratings. Some products may not have ratings, so ensure that the ratings section is conditionally rendered.
+
+Components:
+
+1. ProductList.js: Responsible for rendering a list of products
+2. Product.js: Responsible for rendering a single product
+3. Price.js: Responsible for rendering the price of a product
+4. Ratings.js: Responsible for rendering the ratings of a product
+
+JSON Data:
+
+1. products.json: Contains the list of products with their details (name, price, ratings, etc.)
+
+Requirements:
+
+1. Fetch or import the products JSON data in ProductList.js
+2. Map over the products array and render a Product component for each product
+3. In Product.js, render the product name, price (using the Price component), and ratings (using the Ratings component) if they exist
+4. In Price.js, render the price of the product
+5. In Ratings.js, map over the ratings array and render each rating with its corresponding review
+6. Conditionally render the Ratings component in Product.js if the product has ratings
+
+Note: Ensure that the components are properly imported and exported, and that the JSON data is properly fetched or imported.
+
+
+
+This is the JSON DATA BELOW
+
+
+[
+{
+"id": 1,
+"name": "Product 1",
+"price": 10.99,
+"ratings": [
+{ "rating": 5, "review": "Great product!" },
+{ "rating": 4, "review": "Good product!" }
+]
+},
+{
+"id": 2,
+"name": "Product 2",
+"price": 9.99
+},
+{
+"id": 3,
+"name": "Product 3",
+"price": 12.99,
+"ratings": [
+{ "rating": 5, "review": "Excellent product!" }
+]
+},
+{
+"id": 4,
+"name": "Product 4",
+"price": 8.99,
+"ratings": [
+{ "rating": 4, "review": "Good product!" },
+{ "rating": 3, "review": "Okay product!" }
+]
+},
+{
+"id": 5,
+"name": "Product 5",
+"price": 15.99,
+"ratings": [
+{ "rating": 5, "review": "Amazing product!" },
+{ "rating": 5, "review": "Best product ever!" }
+]
+},
+{
+"id": 6,
+"name": "Product 6",
+"price": 11.99
+},
+{
+"id": 7,
+"name": "Product 7",
+"price": 14.99,
+"ratings": [
+{ "rating": 4, "review": "Great product!" },
+{ "rating": 4, "review": "Good product!" }
+]
+},
+{
+"id": 8,
+"name": "Product 8",
+"price": 9.99,
+"ratings": [
+{ "rating": 5, "review": "Excellent product!" }
+]
+}
+]
