@@ -1,0 +1,31 @@
+@import "/src/styles/variable.scss";
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding-bottom: 30px;
+
+  .touch {
+    display: flex;
+    background-color: $lightPurple;
+    padding: 5% 10%;
+    gap: 5%;
+    color: $lightGray;
+
+    .get {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 50%;
+    }
+  }
+
+  .copyRight {
+    p {
+      font-family: $LexendDeca;
+      color: $Blue;
+      text-align: center;
+    }
+  }
+}

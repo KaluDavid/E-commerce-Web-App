@@ -15,7 +15,7 @@ export function Main() {
         </div>
       
           <h1>
-            We Offer <br /> Quality Products 👍
+            We Offer <br /> Quality Products 🛍️
           </h1>
         
       </main>
