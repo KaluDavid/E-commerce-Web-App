@@ -1,5 +1,9 @@
 import React from "react";
 import "./body-styles/footer.scss";
+import Mastercard from "./img/mastercard.png";
+import Secured from "./img/secured.svg";
+import Secured2 from "./img/secured2.svg";
+import Secured3 from "./img/ssl.svg";
 
 export function Footer() {
   return (
@@ -14,39 +18,29 @@ export function Footer() {
                 No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita
                 et et dolor sed dolor. Rebum tempor no vero est magna amet no
               </em>
-              </div>
-
-              <div>
-                <span>
-                  <img src="" alt="" />
-                  <b>123 Street, Lagos, Nigeria</b>
-                </span>
-                <span>
-                  <img src="" alt="" />
-                  <b>eshop@gmail.com</b>
-                </span>
-              </div>
-        
-          </section>
-
-          <section>
-            <div>
-              <b> WE ACCEPT:</b>
-              <span>
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
-              </span>
             </div>
 
             <div>
+              <b>🏠 123 Street, Lagos, Nigeria</b>
+
+              <b> 📩: eshop@gmail.com</b>
+            </div>
+          </section>
+
+          <section className="payment">
+            <div className="accept">
+              <b> WE ACCEPT:</b>
+              <span>
+                <img src={Mastercard} alt="payment methods for E-shop " />
+              </span>
+            </div>
+
+            <div className="secured">
               <b>SECURED BY:</b>
               <span>
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
-                <img src="" alt="" />
+                <img src={Secured} alt="secured packages for E-shop" />
+                <img src={Secured2} alt="secured packages for E-shop" />
+                <img src={Secured3} alt="secured packages for E-shop" />
               </span>
             </div>
           </section>

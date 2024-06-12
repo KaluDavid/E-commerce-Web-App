@@ -12,8 +12,10 @@ export function Header() {
 
         <nav>
           <a href="">Collections</a>
-          <a href="">About</a>
-          <a href="">Contact</a>
+          <a href="" className="contact">Contact</a>
+          <a href="">
+            <img src={img} alt="" />
+          </a>
         </nav>
       </header>
     </>

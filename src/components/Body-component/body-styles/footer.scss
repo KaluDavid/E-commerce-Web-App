@@ -3,21 +3,42 @@
 footer {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2rem;
   padding-bottom: 30px;
 
   .touch {
     display: flex;
     background-color: $lightPurple;
     padding: 5% 10%;
-    gap: 5%;
+    gap: 30%;
     color: $lightGray;
 
     .get {
       display: flex;
       flex-direction: column;
       gap: 10px;
-      width: 50%;
+      // width: 50%;
+
+      h1 {
+        font-family: $BigShouldersDisplay;
+        font-size: 50px;
+        letter-spacing: 2px;
+      }
+
+      em {
+        line-height: 20px;
+        font-size: 16px;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        b {
+          font-family: $LexendDeca;
+          font-size: 13px;
+        }
+      }
     }
   }
 
@@ -26,6 +47,40 @@ footer {
       font-family: $LexendDeca;
       color: $Blue;
       text-align: center;
+    }
+  }
+
+  .payment {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: left;
+
+    b {
+      white-space: nowrap;
+      font-family: $LexendDeca;
+    }
+
+    .accept {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .secured {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      span {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        img {
+          width: 16%;
+        }
+      }
     }
   }
 }
