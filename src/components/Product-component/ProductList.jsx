@@ -1,7 +1,17 @@
-import React from 'react'
+import React from "react";
+import { Product } from "./Product";
+import { Ratings } from "./Ratings";
+import { Price } from "./Price";
+import ProductContent from "./Product.json";
 
-export default function ProductList() {
+export function ProductList() {
   return (
-    <div>ProductList</div>
-  )
+    <>
+      {ProductContent.map((content) => {
+        if (content.ratings) {
+          return <div key={content.id}>{content.name}</div>;
+        }
+      })}
+    </>
+  );
 }
