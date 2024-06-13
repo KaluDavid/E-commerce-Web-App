@@ -1,5 +1,12 @@
 import React from "react";
 
 export function Price() {
-  return <></>;
+  return <>
+  
+  
+  <div>
+    
+    </div>
+    
+    </>;
 }
