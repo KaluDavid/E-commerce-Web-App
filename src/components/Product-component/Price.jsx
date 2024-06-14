@@ -1,12 +1,11 @@
 import React from "react";
-
-export function Price() {
-  return <>
-  
-  
-  <div>
-    
-    </div>
-    
-    </>;
+import "./productStyle/product.scss";
+export function Price({ amount }) {
+  if ({ amount }) {
+    return (
+      <>
+        <div className="price"> Prices: {amount}</div>
+      </>
+    );
+  }
 }

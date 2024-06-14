@@ -1,5 +1,9 @@
-import React from 'react'
+import React from "react";
 
-export function Ratings() {
-  return 
+export function Ratings({ productRates }) {
+  return (
+    <>
+      <div>{productRates ? productRates : null}</div>
+    </>
+  );
 }
