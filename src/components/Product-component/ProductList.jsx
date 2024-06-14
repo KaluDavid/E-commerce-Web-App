@@ -13,7 +13,7 @@ export function ProductList() {
             name={content.name}
             price={content.price}
             ratings={content.ratings}
-        
+            img={content.img}
           />
         );
       })}

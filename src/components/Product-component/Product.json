@@ -12,7 +12,9 @@
         "rating": 4,
         "review": "Good product!"
       }
-    ]
+    ],
+
+    "img": "/img/headphone 2.jpg"
   },
   {
     "id": 2,

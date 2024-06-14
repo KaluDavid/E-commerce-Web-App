@@ -1,6 +1,30 @@
 @import "/src/styles/variable.scss";
 
+@mixin flex() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
 .price {
   display: flex;
   color: red;
+}
+
+.product {
+  @include flex();
+  color: white;
+
+  img {
+    width: 50%;
+    height: 20vh;
+    object-fit: contain;
+  }
+
+  .namePrice {
+    padding: 5%;
+    background: #000;
+    @include flex();
+  }
 }
