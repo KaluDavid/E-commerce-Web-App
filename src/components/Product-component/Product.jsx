@@ -1,8 +1,6 @@
 import React from "react";
 import { Price } from "./Price";
 import { Ratings } from "./Ratings";
-import img1 from "./img/camera.jpg";
-import img2 from "./img/headphone 2.jpg";
 import "./productStyle/product.scss";
 
 export function Product({ name, price, ratings, img }) {
@@ -10,9 +8,9 @@ export function Product({ name, price, ratings, img }) {
     <>
       <section className="product">
         <div className="namePrice">
-          {img} <br />
+          <img src={img} alt="" />
           <br />
-          <img src={img1} alt="" />
+
           {name}
           <Price amount={price} />
         </div>

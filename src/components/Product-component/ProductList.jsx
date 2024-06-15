@@ -1,6 +1,6 @@
 import React from "react";
 import { Product } from "./Product";
-import ProductContent from "./Product.json";
+import { ProductContent } from "./ProductJson";
 import { Price } from "./Price";
 
 export function ProductList() {
@@ -13,7 +13,7 @@ export function ProductList() {
             name={content.name}
             price={content.price}
             ratings={content.ratings}
-            img={content.img}
+            img={content.image}
           />
         );
       })}
