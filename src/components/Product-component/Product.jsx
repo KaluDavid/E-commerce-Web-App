@@ -16,7 +16,7 @@ export function Product({ name, price, ratings, img }) {
         </div>
 
         <div>
-          <Ratings productRates={ratings} />
+          <Ratings ratings={ratings} />
         </div>
       </section>
     </>
