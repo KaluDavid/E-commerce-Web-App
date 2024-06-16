@@ -1,29 +1,36 @@
 @import "/src/styles/variable.scss";
 
-@mixin flex() {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
 .price {
   display: flex;
   color: red;
+  font-family: $BigShouldersDisplay;
+  font-size: 30px;
 }
 
-.product {
-  @include flex();
-  color: white;
-
-  img {
-    height: 30vh;
-    object-fit: contain;
-  }
+.prod {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
 
   .namePrice {
-    padding: 5%;
+    color: white;
     background: #000;
-    @include flex();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    gap: 20px;
+    padding: 4% 0%;
+
+    img {
+      height: 50%;
+      width: 50%;
+      object-fit: contain;
+    }
+
+    span {
+      font-family: $LexendDeca;
+    }
   }
 }

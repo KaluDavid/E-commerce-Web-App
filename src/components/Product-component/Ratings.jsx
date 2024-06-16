@@ -1,14 +1,20 @@
 import React from "react";
 
 export function Ratings({ ratings }) {
-  if (!ratings) {
-    return <div>Loading ratings...</div>;
-  }
+  // if (!ratings) {
+  //   return null;
+  // }
 
-  return ratings.map((rates) => {
-    <div key={rates}>
-      <span>My rates {rates} </span>
-    </div>;
-    console.log(rates);
-  });
+  return ratings
+    ? ratings.map((rates, index) => (
+        <div key={index}>
+          <em>
+            <b>Rating: </b>
+            {rates.rating} <br />
+            <b>Review: </b>
+            {rates.review}{" "}
+          </em>
+        </div>
+      ))
+    : null;
 }
