@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export function Ratings({ ratings }) {
   if (!ratings) {
@@ -13,10 +14,19 @@ export function Ratings({ ratings }) {
             <b>Rating: </b>
             {rates.rating} <br />
             <b>Review: </b>
-            {rates.review}{" "}
+            {rates.review}
           </em>
         </div>
       ))}
     </>
   );
 }
+
+Ratings.propTypes = {
+  ratings: PropTypes.arrayOf(
+    PropTypes.shape({
+      review: PropTypes.string.isRequired,
+      rating: PropTypes.number.isRequired,
+    })
+  ),
+};

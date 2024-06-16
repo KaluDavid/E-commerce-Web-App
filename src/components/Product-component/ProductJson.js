@@ -6,7 +6,6 @@ import img5 from "./img/shoe 2.jpg";
 import img6 from "./img/shoe.jpg";
 import img7 from "./img/watch.jpg";
 
-
 export const ProductContent = [
   {
     id: 1,

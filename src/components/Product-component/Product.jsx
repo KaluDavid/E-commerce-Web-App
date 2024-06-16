@@ -26,4 +26,7 @@ export function Product({ name, price, ratings, img }) {
   );
 }
 
-Product.prototype = {};
+Product.propTypes = {
+  name: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+};

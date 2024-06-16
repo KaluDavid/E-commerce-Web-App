@@ -1,11 +1,15 @@
 import React from "react";
 import "./productStyle/product.scss";
+import PropTypes from "prop-types"
+
 export function Price({ amount }) {
-  if ({ amount }) {
-    return (
-      <>
-        <div className="price"> Prices: {amount}</div>
-      </>
-    );
-  }
+  return (
+    <>
+      <div className="price"> Prices: {amount}</div>
+    </>
+  );
+}
+
+Price.propTypes ={
+  amount: PropTypes.number.isRequired
 }
