@@ -9,13 +9,16 @@ export function Ratings({ ratings }) {
   return (
     <>
       {ratings.map((rates, index) => (
-        <div key={index}>
-          <em>
-            <b>Rating: </b>
-            {rates.rating} <br />
-            <b>Review: </b>
-            {rates.review}
-          </em>
+        <div key={index} className="ratings">
+          <div>
+            <p>Rating: </p>
+
+            <em>{rates.rating}</em>
+          </div>
+          <div>
+            <p>Review: </p>
+            <em>{rates.review}</em>
+          </div>
         </div>
       ))}
     </>

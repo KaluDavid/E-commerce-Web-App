@@ -1,5 +1,14 @@
 @import "/src/styles/variable.scss";
 
+.product {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  // align-items: center;
+  padding: 0% 10% 8%;
+  text-align: center;
+}
+
 .price {
   display: flex;
   color: red;
@@ -7,30 +16,50 @@
   font-size: 30px;
 }
 
-.prod {
+.product-card {
+  color: black;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  img {
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  span {
+    font-family: $LexendDeca;
+  }
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ratings {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 5px;
 
-  .namePrice {
-    color: white;
-    background: #000;
+  p {
+    font-family: $LexendDeca;
+  }
+
+  div {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 20%;
-    gap: 20px;
-    padding: 4% 0%;
-
-    img {
-      height: 50%;
-      width: 50%;
-      object-fit: contain;
-    }
-
-    span {
-      font-family: $LexendDeca;
-    }
+    gap: 5px;
+    text-align: center;
   }
 }

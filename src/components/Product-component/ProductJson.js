@@ -1,10 +1,10 @@
-import img from "./img/headphone 2.jpg";
-import img2 from "./img/headphones.jpg";
-import img3 from "./img/camera.jpg";
-import img4 from "./img/pepsi.jpg";
-import img5 from "./img/shoe 2.jpg";
-import img6 from "./img/shoe.jpg";
-import img7 from "./img/watch.jpg";
+import img from "./img/headphone 2.png";
+import img2 from "./img/headphones.png";
+import img3 from "./img/camera.png";
+import img4 from "./img/pepsi.png";
+import img5 from "./img/shoe 2.png";
+import img6 from "./img/shoe.png";
+import img7 from "./img/watch.png";
 
 export const ProductContent = [
   {
